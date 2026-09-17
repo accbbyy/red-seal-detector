@@ -1,0 +1,12 @@
+# 供官方 CLI 打包（dify plugin package）时排除；本仓库的 build_seal_pkg.py 用白名单，不依赖此文件
+.git
+.gitignore
+.difyignore
+dist/
+__pycache__/
+*.py[cod]
+*.bak*
+*.tmp
+README.md
+build_seal_pkg.py
+verify_pkg.py

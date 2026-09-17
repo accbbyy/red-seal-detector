@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <circle cx="24" cy="24" r="20" fill="#c82a2a" stroke="#a02020" stroke-width="2"/>
+  <circle cx="24" cy="24" r="13" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="24" y="28" font-size="10" fill="#ffffff" text-anchor="middle" font-family="sans-serif">印</text>
+</svg>

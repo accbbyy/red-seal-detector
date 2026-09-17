@@ -1,0 +1,15 @@
+identity:
+  author: accbbyy
+  name: red_seal_detector
+  label:
+    en_US: Red Seal Detector
+    zh_Hans: 红色印章检测
+  description:
+    en_US: Detect and count red seals in contract images
+    zh_Hans: 检测合同图片中的红色印章数量
+  icon: icon.svg
+tools:
+  - tools/red_seal_detector.yaml
+extra:
+  python:
+    source: provider/red_seal_detector.py

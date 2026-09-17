@@ -1,0 +1,26 @@
+identity:
+  name: red_seal_detector
+  author: accbbyy
+  label:
+    en_US: Red Seal Detector
+    zh_Hans: 红色印章检测
+description:
+  human:
+    en_US: Detect and count seals in contract images using pure image processing
+    zh_Hans: 用图像处理检测合同图片中的印章数量（红/蓝/黑章，不依赖大模型）
+  llm: Detect and count CIRCULAR/ELLIPTICAL (round) seals/stamps in contract images — red or blue seals on color pages, and black seals on grayscale/scanned pages. Input files are contract images or PDFs. Output is a JSON object with a field named seal count (印章数量), file count (检测文件数) and details (详情). Only count round/ring-shaped circular seals; DO NOT count square/rectangular personal name seals (方形人名章) or incomplete seals cut off at the page edge.
+parameters:
+  - name: files
+    type: files
+    required: true
+    label:
+      en_US: Images
+      zh_Hans: 合同图片
+    human_description:
+      en_US: Contract images to detect red seals
+      zh_Hans: 需要检测红色印章的合同图片
+    llm_description: Contract images to detect red seals
+    form: llm
+extra:
+  python:
+    source: tools/red_seal_detector.py
